@@ -21,7 +21,12 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] No Storyboards
+- [x] App Icon 
+- [x] Formatted input validations
+- [x] Dismissible keyboard 
+- [x] Persisted data
+- [x] Decoupled modular design
 
 ## Video Walkthrough 
 
