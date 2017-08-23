@@ -27,6 +27,7 @@ The following **additional** features are implemented:
 - [x] Dismissible keyboard 
 - [x] Persisted data
 - [x] Decoupled modular design
+- [x] UI simplicity styling
 
 ## Video Walkthrough 
 
