@@ -52,15 +52,15 @@ Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.c
 
 **Answer:** Closures can capture the `self` instance which can cause a strong reference cycle (memory leak). Your best defense against this is to use a `[weak self]` in your closure response.
 
-    ```swift
-    resource.request().onComplete { [weak self] response in
-      guard let strongSelf = self else {
-        return
-      }
-      let model = strongSelf.updateModel(response)
-      strongSelf.updateUI(model)
-    }
-    ```
+```swift
+resource.request().onComplete { [weak self] response in
+  guard let strongSelf = self else {
+    return
+  }
+  let model = strongSelf.updateModel(response)
+  strongSelf.updateUI(model)
+}
+```
 
 ## License
 
