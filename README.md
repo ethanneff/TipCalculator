@@ -48,9 +48,9 @@ As part of your pre-work submission, please reflect on the app and answer the fo
     - Swift linter https://github.com/realm/SwiftLint
     - Swift algorithms https://github.com/raywenderlich/swift-algorithm-club
 
-Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
+**Question 2**: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
-**Answer:** Closures can capture the `self` instance which can cause a strong reference cycle (memory leak). Your best defense against this is to use a `[weak self]` in your closure response, or use alternatives to a closure (a `weak delegate` or `NotificationCenter`)
+**Answer:** Closures can capture the `self` instance which can cause a strong reference cycle (memory leak). Your best defense against this is to use a `[weak self]` in your closure response, or use alternatives to a closure (a `weak delegate` or `NotificationCenter`). `[weak self]` example below:
 
 ```swift
 resource.request().onComplete { [weak self] response in
