@@ -44,10 +44,11 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 **Question 1**: "What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer? Bonus: any idea how they are being implemented under the hood? (It might give you some ideas if you right-click on the Storyboard and click Open As->Source Code")
 
 **Answer:** I personally like iOS development over Android or Hybrid development (ReactNative and Cordova). I appreciate the expectations of quality that comes with iOS development, and I enjoy opinionated nature of the platform - which makes development overall easier. In terms of under-the-hood, I have worked with the `.xml` of the Storyboard, I have made scripts which inject into the `project.pbxproj`, and I have interacted with the the underlying `Objective C` layers of the Apple frameworks. For new developers, these are some of the best resources that I use:
-    - Learn iOS https://teamtreehouse.com/
-    - Swift best practices https://github.com/raywenderlich/swift-style-guide
-    - Swift linter https://github.com/realm/SwiftLint
-    - Swift algorithms https://github.com/raywenderlich/swift-algorithm-club
+
+  - Learn iOS https://teamtreehouse.com/
+  - Swift best practices https://github.com/raywenderlich/swift-style-guide
+  - Swift linter https://github.com/realm/SwiftLint
+  - Swift algorithms https://github.com/raywenderlich/swift-algorithm-club
 
 **Question 2**: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
